@@ -1,8 +1,8 @@
 SSH_data:
-    SSH_Password: "apex_fucking_nerd"
-    SSH_Username: "reaper"
-    SSH_Hostname: "10.0.0.96"
-    SSH_Portnumb: "22"
+    SSH_Password: "password"
+    SSH_Username: "userssh"
+    SSH_Hostname: "10.0.0.120"
+    SSH_Portnumb: "3944"
     SSH_Dial_method: "tcp"
     SSH_TTY_Auth_TYPE: "password"
     SSH_TTY_Height: "40"
@@ -46,8 +46,8 @@ SSH_data:
     # when you load this yaml file, the SSH DST directory for file upload will be used as the endpoint for the file to go to and be copied to
     #
     # SSH_Dst_Directory_For_File_Download is the location where files will be downloaded from the SSH serber onto on your home computer
-    SSH_Dst_Directory_For_File_Upload: "/home/reaper/Desktop/filename.txt"
-    SSH_Dst_Directory_For_File_Download: "/home/xea43p3x/Desktop/Books"
+    SSH_Dst_Directory_For_File_Upload: ""
+    SSH_Dst_Directory_For_File_Download: ""
 #
 #
 # Side NOTE
