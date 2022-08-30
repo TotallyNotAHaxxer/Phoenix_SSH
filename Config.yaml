@@ -1,0 +1,56 @@
+SSH_data:
+    SSH_Password: "apex_fucking_nerd"
+    SSH_Username: "reaper"
+    SSH_Hostname: "10.0.0.96"
+    SSH_Portnumb: "22"
+    SSH_Dial_method: "tcp"
+    SSH_TTY_Auth_TYPE: "password"
+    SSH_TTY_Height: "40"
+    SSH_TTY_Width: "80"
+    SSH_TTY_ECHO_Mode: "0"
+    SSH_TTY_Name: "vt100"
+    # note this section can be a bit tricky so read below for more details 
+    #
+    # Chances are if you configure this you will be using utils options
+    # in this shell / program, make sure the paths are right, and are found
+    # if they are not found the program will not apply it to the session
+    # variable list.
+    #
+    # when sending the file or setting a directory for the file to be sent to the filepath 
+    # must be ON THE DESTINATION SSH SERVER like so 
+    #
+    #
+    # SSH_Dst_Directory_For_File_Upload: "/home/ssh_server/whatever/filepath/output.txt"
+    #
+    #
+    # if you are DOWNLOADING files from a SSH server src will be the filepath of the files 
+    # you want to download from the SSH server. the DST will be the output of the downloaded files 
+    # when downloading files you can use `set outf` to set the output destination of the downloaded 
+    # files from the SSH server that you downloaded the files from
+    #
+    #
+    #
+    # NOTE: DOWNLOADS ARE SPECIFIED FOR DIRECTORIES NOT INDIVIDUAL FILES THAT IS IF YOU ARE USING OPTIONS `utils dloadf path/to/ssh_directory`
+    # UPLOADS ARE SINGLE FILES ONLY THAT IS IF YOU ARE USING `utils uloadf path/to/ssh_directory`
+    # 
+    # EXAMPLE DOWNLOAD TO DIRECTORY
+    #
+    # SSH_Dst_Directory_For_File_Download: "/home/my_pc/Desktop/Files"
+    #
+    #
+    #  Summary 
+    #
+    # SSH_Dst_Directory_For_File_Upload is the location the file will be saved and sent to on the server 
+    #
+    # Example usage -> utils uloadf /home/xea43p3x/Desktop/filename.txt 
+    # when you load this yaml file, the SSH DST directory for file upload will be used as the endpoint for the file to go to and be copied to
+    #
+    # SSH_Dst_Directory_For_File_Download is the location where files will be downloaded from the SSH serber onto on your home computer
+    SSH_Dst_Directory_For_File_Upload: "/home/reaper/Desktop/filename.txt"
+    SSH_Dst_Directory_For_File_Download: "/home/xea43p3x/Desktop/Books"
+#
+#
+# Side NOTE
+#
+# Configuration files can be in ANY path, they just MUST have the same structure and names
+#
